@@ -6,11 +6,14 @@
 */
 int main(void)
 {
-int ch;
-for (ch = 'a'; ch <= 'z'; ch++)
-putchar(ch);
-for (ch = 'A'; ch <= 'Z'; ch++)
-putchar(ch);
+char c;
+for (c = 'a'; c <= 'z'; c++)
+{
+if (c != 'e' && c != 'q')
+{
+putchar(c);
+}
+}
 putchar('\n');
 return (0);
 }
