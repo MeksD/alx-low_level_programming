@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <string.h>
-#include <stdio.h>
 #include "lists.h"
 /**
 * free_listp2 - frees a linked list
@@ -40,7 +37,7 @@ while (*h != NULL)
 {
 new = malloc(sizeof(listp_t));
 if (new == NULL)
-exit(98)
+exit(98);
 new->p = (void *)*h;
 new->next = hptr;
 hptr = new;
